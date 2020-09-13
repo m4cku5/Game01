@@ -1,5 +1,5 @@
 # OBJS specifies which files to compile as part of the project
-OBJS = main.c init.c
+OBJS = draw.c main.c init.c input.c
 
 # CC specifies which compiler we're using
 CC = gcc

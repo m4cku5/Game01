@@ -49,10 +49,15 @@ int initSDL(void) {
 
 void stopSDL(void) {
 
+    // Destroy the renderer.
 	SDL_DestroyRenderer(gRenderer);
+    gRenderer = NULL;
 	
+    // Destroy the window.
 	SDL_DestroyWindow(gWindow);
+    gWindow = NULL;
 	
+    // Quit the SDL subsystem.
 	SDL_Quit();
 
 }
